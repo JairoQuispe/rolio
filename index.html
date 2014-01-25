@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+	<meta charset="utf-8" />	
+	<title>Juega con el Sapo Rolio</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;user-scalable=no">  
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$.fn.fullpage({
+				
+				anchors: ['Inicio', 'Juego']
+			});
+			
+		});
+	</script>
+</head>
+<body>
+	<div class="section " id="section0">
+		<h1>Juega con el Sapo Rolio</h1>
+		<div id="rolio-img"></div>
+		<div id="btnPlay">
+			<a href="#Juego">Jugar Ahora!</a>
+		</div>
+	</div>
+	<div class="section" id="section1">
+		<div class="intro">
+			<canvas id="game-sapo" width="950" height="540" style="border:2.5px black;border-style:outset;border-color:rgba(47,55,111,0.7);"></canvas>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/sapo-rolio.js"></script>
+</body>
+</html>

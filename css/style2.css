@@ -1,0 +1,14 @@
+*{
+	padding:0;
+	margin: 0 auto;
+}
+body{
+	text-align: center;
+}
+#container{
+	background-color: #34495E;
+	max-width: 100%;
+	min-height: 100%;
+	font-family: 'Peralta', cursive;
+	color:white;
+}

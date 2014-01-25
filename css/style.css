@@ -1,0 +1,207 @@
+@CHARSET "UTF-8";
+/* Reset CSS
+ * --------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Peralta);
+::selection 	 	{background: #717171; color: #fff; }
+::-moz-selection 	{background: #717171; color: #fff; }
+::-webkit-selection {background: #717171; color: #fff; }
+::-o-selection		{background: #717171; color: #fff; }
+*{
+	text-align: center;
+	transition:all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+}
+a{
+	text-decoration:none;
+	font-family: 'Peralta', cursive;
+	color:#FFF;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;
+    font-size: 70%;
+    margin:0;
+    padding:0;
+    font-family: 'Peralta', cursive;
+}
+q:before,q:after {
+    content:'';
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+	color: #FFF;
+	color: rgba(0,0,0,0.5);
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-size: 4em;	
+	color:#ECF0F1;
+}
+.section{
+	text-align:center;
+}
+#rolio-img{
+	background-image:url(../img/html5-1.png);
+	background-size:200px 220px ;
+	background-repeat: no-repeat;
+	height:220px;
+	width:195px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	-webkit-animation:rolio-htm 6s linear infinite;
+	-moz-animation:rolio-htm 6s linear infinite;
+	animation:rolio-htm 6s linear infinite;
+}
+#section0{
+	background-color:#34495E;
+	padding: 40px 0;
+	animation:bg-one 6s infinite ease-in-out;
+	-webkit-animation:bg-one 6s infinite ease-in-out;
+	-moz-animation:bg-one 6s infinite ease-in-out;
+}
+#section0 h1{
+	margin-top:-200px;
+	text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#section1{
+	background-image: -ms-linear-gradient(top, #202D3B 0%, #606B5E 100%);
+	background-image: -moz-linear-gradient(top, #202D3B 0%, #606B5E 100%);
+	background-image: -o-linear-gradient(top, #202D3B 0%, #606B5E 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #202D3B), color-stop(1, #606B5E));
+	background-image: -webkit-linear-gradient(top, #202D3B 0%, #606B5E 100%);
+	background-image: linear-gradient(to bottom, #202D3B 0%, #606B5E 100%);
+}
+#btnPlay a{
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#C0392B), to(#E74C3C));
+	background-image: -webkit-linear-gradient(to top, #C0392B 0%, #E74C3C 100%);
+	background-image: -moz-linear-gradient(to top, #C0392B 0%, #E74C3C 100%);
+	background-image: -o-linear-gradient(to top, #C0392B 0%, #E74C3C 100%);
+	background-image: linear-gradient(to top, #C0392B 0%, #E74C3C 100%);
+	padding: 18px 45px;
+	color:#FFF;
+	margin-top: 20px;
+	cursor:pointer;
+	margin-left: auto;
+	margin-right: auto;
+	top:35px;
+	font-size: 1.6em;
+	border-radius:5px 5px;
+	position: relative;
+	text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.35);
+	-moz-box-shadow:    1px 1px 30px rgba(255, 255, 255, 0.35);
+	box-shadow:         1px 1px 30px rgba(255, 255, 255, 0.35);
+	transition: all 1s ease-out;
+	-webkit-transition: all 1s ease-out;
+	animation:btnplay 1s infinite ease-in-out;
+	-webkit-animation:btnplay 1s infinite ease-in-out;
+	-moz-animation:btnplay 1s infinite ease-in-out;
+}
+#btnPlay a:hover{
+	background-image: -ms-linear-gradient(top, #C0392B 0%, #E74C3C 100%);
+	background-image: -moz-linear-gradient(top, #C0392B 0%, #E74C3C 100%);
+	background-image: -o-linear-gradient(top, #C0392B 0%, #E74C3C 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #C0392B), color-stop(1, #E74C3C));
+	background-image: -webkit-linear-gradient(top, #C0392B 0%, #E74C3C 100%);
+	background-image: linear-gradient(to bottom, #C0392B 0%, #E74C3C 100%);
+}
+
+@keyframes btnplay
+{
+0%   {box-shadow:1px 1px 30px rgba(255, 255, 255, 0.35);}
+50%  {box-shadow:50px 50px 30px rgba(255, 255, 255, 0.85);}
+100% {box-shadow:1px 1px 30px rgba(255, 255, 255, 0.35);}
+}
+@-webkit-keyframes btnplay
+{
+0%   {-webkit-box-shadow:1px 1px 30px rgba(255, 255, 255, 0.35);}
+50%  {-webkit-box-shadow:1px 1px 35px rgba(255, 255, 255, 0.75);}
+100% {-webkit-box-shadow:1px 1px 30px rgba(255, 255, 255, 0.35);}
+}
+@-moz-keyframes btnplay
+{
+0%   {-moz-box-shadow:1px 1px 30px rgba(255, 255, 255, 0.35);}
+50%  {-moz-box-shadow:1px 1px 35px rgba(255, 255, 255, 0.75);}
+100% {-moz-box-shadow:1px 1px 30px rgba(255, 255, 255, 0.35);}
+}
+@keyframes bg-one
+{
+0%   {background-color:#34495E;}
+25%   {background-color:#51687F;}
+50%  {background-color:#437479;}
+75% {background-color:#325A5E;}
+100% {background-color:#34495E;}
+}
+@-webkit-keyframes bg-one
+{
+0%   {background-color:#34495E;}
+25%   {background-color:#51687F;}
+50%  {background-color:#437479;}
+75% {background-color:#325A5E;}
+100% {background-color:#34495E;}
+}
+@-moz-keyframes bg-one
+{
+0%   {background-color:#34495E;}
+25%   {background-color:#51687F;}
+50%  {background-color:#437479;}
+75% {background-color:#325A5E;}
+100% {background-color:#34495E;}
+}
+@keyframes rolio-htm
+{
+0%   {background-image:url(../img/html5-1.png);}
+10%  {background-image:url(../img/html5-2.png);}
+20%  {background-image:url(../img/html5-3.png);}
+30%  {background-image:url(../img/html5-4.png);}
+40%  {background-image:url(../img/html5-5.png);}
+50% {background-image:url(../img/html5-6.png);}
+66%  {background-image:url(../img/html5-7.png);}
+70%  {background-image:url(../img/html5-6.png);}
+75%  {background-image:url(../img/html5-5.png);}
+85%  {background-image:url(../img/html5-4.png);}
+95%  {background-image:url(../img/html5-3.png);}
+100%  {background-image:url(../img/html5-2.png);}
+}
+@-moz-keyframes rolio-htm
+{
+0%   {background-image:url(../img/html5-1.png);}
+10%  {background-image:url(../img/html5-2.png);}
+20%  {background-image:url(../img/html5-3.png);}
+30%  {background-image:url(../img/html5-4.png);}
+40%  {background-image:url(../img/html5-5.png);}
+50% {background-image:url(../img/html5-6.png);}
+66%  {background-image:url(../img/html5-7.png);}
+70%  {background-image:url(../img/html5-6.png);}
+75%  {background-image:url(../img/html5-5.png);}
+85%  {background-image:url(../img/html5-4.png);}
+95%  {background-image:url(../img/html5-3.png);}
+100%  {background-image:url(../img/html5-2.png);}
+}
+@-webkit-keyframes rolio-htm
+{
+0%   {background-image:url(../img/html5-1.png);}
+10%  {background-image:url(../img/html5-2.png);}
+20%  {background-image:url(../img/html5-3.png);}
+30%  {background-image:url(../img/html5-4.png);}
+40%  {background-image:url(../img/html5-5.png);}
+50% {background-image:url(../img/html5-6.png);}
+66%  {background-image:url(../img/html5-7.png);}
+70%  {background-image:url(../img/html5-6.png);}
+75%  {background-image:url(../img/html5-5.png);}
+85%  {background-image:url(../img/html5-4.png);}
+95%  {background-image:url(../img/html5-3.png);}
+100%  {background-image:url(../img/html5-2.png);}
+}
